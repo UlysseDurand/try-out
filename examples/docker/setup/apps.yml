@@ -1,0 +1,6 @@
+trame: # Default app under /index.html
+  www_modules:
+    - try_out.module
+  app: try-out
+try-out: # /try-out.html
+  app: try-out
