@@ -119,3 +119,5 @@ jobs:
       # https://docs.pypi.org/trusted-publishers/using-a-publisher/
       - uses: pypa/gh-action-pypi-publish@release/v1
         if: steps.release.outputs.released == 'true'
+        with:
+          repository-url: https://test.pypi.org/legacy/
