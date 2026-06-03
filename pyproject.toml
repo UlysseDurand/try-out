@@ -106,10 +106,8 @@ version_variables = [
 ]
 
 build_command = """
-    python -m pip install -e '.[build]'
-    uv lock --upgrade-package "$PACKAGE_NAME"
-    git add uv.lock
-    uv build
+    python -m pip install build
+    python -m build
 """
 
 [tool.semantic_release.publish]
