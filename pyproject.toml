@@ -106,8 +106,8 @@ version_variables = [
 ]
 
 build_command = """
-    python -m pip install build
-    python -m build
+    python -m pip install uv
+    uv build
 """
 
 [tool.semantic_release.publish]
